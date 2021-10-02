@@ -2,6 +2,9 @@
   "name": "v-hooks",
   "version": "0.1.0",
   "private": true,
+  "main": "dist",
+  "browser": "dist",
+  "module": "dist",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -38,5 +41,6 @@
     "@vue/composition-api": {
       "optional": true
     }
-  }
+  },
+  "types": "dist"
 }
