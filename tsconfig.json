@@ -1,33 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es2018",
     "module": "esnext",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": ["es2017", "es2016", "dom"],
     "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "webpack-env",
-      "jest"
-    ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
+    "esModuleInterop": false,
     "outDir": "dist",
+    "rootDir": "./",
     "declaration": true
   },
-  "include": [
-    "packages"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["./packages/core/**/*.ts"]
 }
