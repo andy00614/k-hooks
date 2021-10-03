@@ -45,7 +45,10 @@ function getGuideSidebar() {
   return [
     {
       text: "Hooks",
-      children: [{ text: "useStep", link: "/core/useStep/" }],
+      children: [
+        { text: "useStep", link: "/core/useStep/" },
+        { text: "useRequest", link: "/core/useRequest/" }
+      ],
     },
   ];
 }
