@@ -9,7 +9,10 @@
     "esModuleInterop": false,
     "outDir": "dist",
     "rootDir": "./",
-    "declaration": true
+    "declaration": true,
+    "paths": {
+      "@": ["./src"]
+    }
   },
   "include": ["./packages/core/**/*.ts"]
 }
